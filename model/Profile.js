@@ -5,7 +5,12 @@ const ProfileSchema = new mongoose.Schema({
   business_name: {
     type: String,
     required: true,
-    trim: true
+    trim: true,
+    default: mongoose.Schema.Types.String
+  },
+  dateOfBirth: {
+    type: String,
+    required: false
   },
   handler: {
     type: String,
@@ -14,7 +19,7 @@ const ProfileSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    required: true,
+    required: false,
     trim: true
   },
   website: {
@@ -40,12 +45,17 @@ const ProfileSchema = new mongoose.Schema({
       type: String
     },
     twitter: {
-      type: String
+      type: String,
     }
   },
   user: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "Users"
+  },
+  isComplete: {
+    type: Boolean,
+    default: false,
+    required: false
   }
 });
 
