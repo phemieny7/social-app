@@ -11,7 +11,7 @@ const NewsfeedSchema = new mongoose.Schema({
     category: {
         type: String
     },
-    comment: [
+    comments: [
         {
             user: {
                 type: mongoose.Schema.Types.ObjectId,
@@ -35,6 +35,7 @@ const NewsfeedSchema = new mongoose.Schema({
             }
         }
     ],
+
     likes: [
         {
             user: {
