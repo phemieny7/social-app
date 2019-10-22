@@ -234,7 +234,7 @@ router.post("/login", async (req, res) => {
     jwt.sign(
       { id: user.id },
       config.get("tokenSecret"),
-      { expiresIn: 3600 },
+      { expiresIn: 3600000000000 },
       (error, token) => {
         if (error) throw error;
         res.json({
