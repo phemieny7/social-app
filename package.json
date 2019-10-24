@@ -1,0 +1,35 @@
+{
+  "name": "social-app",
+  "version": "1.0.0",
+  "description": "A simple social app",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phemieny7/social-app.git"
+  },
+  "author": "Perfcreg Solution",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phemieny7/social-app/issues"
+  },
+  "homepage": "https://github.com/phemieny7/social-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.7.5",
+    "mongoose-timestamp": "^0.6.0",
+    "morgan": "^1.9.1",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
